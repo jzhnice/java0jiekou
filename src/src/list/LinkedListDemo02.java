@@ -13,9 +13,7 @@ public class LinkedListDemo02 {
     public static void main(String[] args) {
 
 
-
-
-        LinkedList<Object> list01=new LinkedList<>();
+        LinkedList<Object> list01 = new LinkedList<>();
         // 链表的方式实现的
         System.out.println(list01.size());
         // 长度默认为0
@@ -32,13 +30,13 @@ public class LinkedListDemo02 {
         // 3:修改
 
 
-        String v = (String) list01.set(1,"xiaowu");     //返回初始值
+        String v = (String) list01.set(1, "xiaowu");     //返回初始值
         System.out.println(v);
         System.out.println(list01);
 
 
         //4:查询
-        for(Object L:list01){
+        for (Object L : list01) {
             System.out.println(L);
         }
 
@@ -55,10 +53,10 @@ public class LinkedListDemo02 {
 //        list01.subList() // 截取
 
         //7:  addAll ()
-        LinkedList<Object> list02=new LinkedList<>();
+        LinkedList<Object> list02 = new LinkedList<>();
         list02.add(111);
         list02.add(222);
-        list01.addAll( 1,list02);
+        list01.addAll(1, list02);
         System.out.println(list01);
 
         //将数据添加到末尾
